@@ -1,4 +1,5 @@
 <div align="center">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0d0d0d&customColorList=0,2,3&height=180&section=header&text=Computer%20Science%20Engineering%20!!&fontSize=32&fontFamily=JetBrains%20Mono&fontColor=2BA8A0&fontAlignY=65&animation=twinkling&descAlignY=80" />
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0d0d0d&customColorList=0,2,3&height=120&section=footer" />
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=32&duration=3000&pause=1000&color=2BA8A0&background=1E1E1E&center=true&vCenter=true&width=1000&height=150&lines=Computer+Science+Engineering+!!" alt="Typing SVG" />
+
 </div>
