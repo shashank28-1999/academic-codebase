@@ -1,1 +1,1 @@
-# academic-codebase
+# Academic codebase
