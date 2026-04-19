@@ -1,7 +1,7 @@
 <svg viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg" width="1000" height="150">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&amp;display=swap');
 
       .typed { animation: typing 5s steps(31, end) infinite; }
       @keyframes typing {
@@ -35,7 +35,7 @@
     <text
       font-family="'JetBrains Mono', monospace"
       font-size="42"
-      font-weight="500"
+      font-weight="700"
       fill="url(#textGrad)"
       class="typed">Computer Science Engineering !!</text>
     <rect class="cursor" x="1" y="-34" width="3" height="42" fill="url(#textGrad)"/>
