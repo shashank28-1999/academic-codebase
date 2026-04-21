@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration - BookStore</title>
+    <script src="../javascript files/registration_validation.js"></script>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form name="regForm" onsubmit="return validate()">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="firstname" id="firstname"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lastname" id="lastname"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Mobile Number:</td>
+                <td><input type="text" name="mobile" id="mobile"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" id="address"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

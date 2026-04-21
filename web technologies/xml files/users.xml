@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <id>U001</id>
+        <name>Ravi Kumar</name>
+        <email>ravi.kumar@email.com</email>
+        <phone>9876543210</phone>
+        <city>Hyderabad</city>
+    </user>
+    <user>
+        <id>U002</id>
+        <name>Priya Sharma</name>
+        <email>priya.sharma@email.com</email>
+        <phone>9123456780</phone>
+        <city>Mumbai</city>
+    </user>
+    <user>
+        <id>U003</id>
+        <name>Arjun Nair</name>
+        <email>arjun.nair@email.com</email>
+        <phone>9988776655</phone>
+        <city>Bangalore</city>
+    </user>
+    <user>
+        <id>U004</id>
+        <name>Sneha Reddy</name>
+        <email>sneha.reddy@email.com</email>
+        <phone>8877665544</phone>
+        <city>Chennai</city>
+    </user>
+    <user>
+        <id>U005</id>
+        <name>Kiran Mehta</name>
+        <email>kiran.mehta@email.com</email>
+        <phone>7766554433</phone>
+        <city>Delhi</city>
+    </user>
+    <user>
+        <id>U006</id>
+        <name>Anjali Singh</name>
+        <email>anjali.singh@email.com</email>
+        <phone>6655443322</phone>
+        <city>Pune</city>
+    </user>
+    <user>
+        <id>U007</id>
+        <name>Vikram Patel</name>
+        <email>vikram.patel@email.com</email>
+        <phone>9001122334</phone>
+        <city>Ahmedabad</city>
+    </user>
+    <user>
+        <id>U008</id>
+        <name>Deepika Rao</name>
+        <email>deepika.rao@email.com</email>
+        <phone>8900112233</phone>
+        <city>Kolkata</city>
+    </user>
+    <user>
+        <id>U009</id>
+        <name>Suresh Babu</name>
+        <email>suresh.babu@email.com</email>
+        <phone>7890011223</phone>
+        <city>Vizag</city>
+    </user>
+    <user>
+        <id>U010</id>
+        <name>Meena Iyer</name>
+        <email>meena.iyer@email.com</email>
+        <phone>6789001122</phone>
+        <city>Kochi</city>
+    </user>
+</users>

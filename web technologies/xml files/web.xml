@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- HelloSessionServlet -->
+    <servlet>
+        <servlet-name>HelloSessionServlet</servlet-name>
+        <servlet-class>HelloSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloSessionServlet</servlet-name>
+        <url-pattern>/HelloSessionServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- AgeCheckServlet -->
+    <servlet>
+        <servlet-name>AgeCheckServlet</servlet-name>
+        <servlet-class>AgeCheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AgeCheckServlet</servlet-name>
+        <url-pattern>/AgeCheckServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ListCookiesServlet -->
+    <servlet>
+        <servlet-name>ListCookiesServlet</servlet-name>
+        <servlet-class>ListCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListCookiesServlet</servlet-name>
+        <url-pattern>/ListCookiesServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- DBUsersServlet -->
+    <servlet>
+        <servlet-name>DBUsersServlet</servlet-name>
+        <servlet-class>DBUsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBUsersServlet</servlet-name>
+        <url-pattern>/DBUsersServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- CalculatorServlet -->
+    <servlet>
+        <servlet-name>CalculatorServlet</servlet-name>
+        <servlet-class>CalculatorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CalculatorServlet</servlet-name>
+        <url-pattern>/CalculatorServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,14 @@
+/* External Style Sheet */
+.external-demo {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid #336699;
+    color: darkgreen;
+    font-size: 16px;
+}
+
+h2 {
+    color: #336699;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}

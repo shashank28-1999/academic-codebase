@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Demo</title>
+    <!-- Internal Style Sheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        .internal-demo {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="../css files/external_style.css">
+</head>
+<body>
+    <h1>CSS Types Demonstration</h1>
+
+    <!-- Inline Style -->
+    <h2>1. Inline Style</h2>
+    <p style="color:red; font-size:18px; font-weight:bold;">
+        This paragraph uses inline CSS. Color is red, font-size is 18px.
+    </p>
+
+    <!-- Internal Style -->
+    <h2>2. Internal Style Sheet</h2>
+    <div class="internal-demo">
+        <p>This div uses an internal style sheet defined in the &lt;head&gt; section. Background is light yellow.</p>
+    </div>
+
+    <!-- External Style -->
+    <h2>3. External Style Sheet</h2>
+    <div class="external-demo">
+        <p>This div uses an external CSS file (external_style.css). Background is light blue.</p>
+    </div>
+</body>
+</html>

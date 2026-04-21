@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number to Words</title>
+</head>
+<body>
+    <h2>Number to Words (0 - 999)</h2>
+    <input type="text" id="numInput" maxlength="3" placeholder="Enter 0-999">
+    <button onclick="convertToWords()">Convert</button>
+    <br><br>
+    <p id="result"></p>
+
+    <script>
+        var ones = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine",
+                    "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen",
+                    "Seventeen", "Eighteen", "Nineteen"];
+        var tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+
+        function convertToWords() {
+            var input = document.getElementById("numInput").value;
+            var result = document.getElementById("result");
+
+            // Reject if not a number or has special chars/alphabets
+            if (!/^\d+$/.test(input)) {
+                result.innerText = "Invalid input. Enter digits only (0-999).";
+                return;
+            }
+
+            var n = parseInt(input);
+
+            if (input.length > 3 || n > 999) {
+                result.innerText = "Number out of range. Enter between 0 and 999.";
+                return;
+            }
+
+            if (n === 0) {
+                result.innerText = "Zero";
+                return;
+            }
+
+            var words = "";
+            if (n >= 100) {
+                words += ones[Math.floor(n / 100)] + " Hundred ";
+                n = n % 100;
+            }
+            if (n >= 20) {
+                words += tens[Math.floor(n / 10)] + " ";
+                n = n % 10;
+            }
+            if (n > 0) {
+                words += ones[n];
+            }
+
+            result.innerText = words.trim();
+        }
+    </script>
+</body>
+</html>

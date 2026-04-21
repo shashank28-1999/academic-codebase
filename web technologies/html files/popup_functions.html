@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Popup Functions</title>
+</head>
+<body>
+    <h2>JavaScript Popup Demonstrations</h2>
+
+    <!-- a) Display Date -->
+    <h3>a) Display Current Date</h3>
+    <input type="text" id="dateBox" size="30">
+    <button onclick="displayDate()">Display Date</button>
+
+    <hr>
+
+    <!-- b) Factorial -->
+    <h3>b) Factorial of a Number</h3>
+    <button onclick="showFactorial()">Find Factorial</button>
+
+    <hr>
+
+    <!-- c) Multiplication Table -->
+    <h3>c) Multiplication Table</h3>
+    <button onclick="showMultiplicationTable()">Show Multiplication Table</button>
+
+    <hr>
+
+    <!-- d) Sum of n numbers -->
+    <h3>d) Sum of n Numbers</h3>
+    <button onclick="showSum()">Find Sum</button>
+
+    <script>
+        // a) Display date in textbox
+        function displayDate() {
+            var d = new Date();
+            document.getElementById("dateBox").value = d.toDateString();
+        }
+
+        // b) Factorial using prompt and alert
+        function showFactorial() {
+            var n = parseInt(prompt("Enter a number to find its factorial:"));
+            if (isNaN(n) || n < 0) {
+                alert("Please enter a valid non-negative number.");
+                return;
+            }
+            var fact = 1;
+            for (var i = 1; i <= n; i++) {
+                fact *= i;
+            }
+            alert("Factorial of " + n + " = " + fact);
+        }
+
+        // c) Multiplication table from 1 to 10
+        function showMultiplicationTable() {
+            var n = parseInt(prompt("Enter a number to display its multiplication table:"));
+            if (isNaN(n)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+            var table = "Multiplication Table of " + n + ":\n\n";
+            for (var i = 1; i <= 10; i++) {
+                table += n + " x " + i + " = " + (n * i) + "\n";
+            }
+            alert(table);
+        }
+
+        // d) Sum of n numbers, each confirmed via confirm box
+        function showSum() {
+            var n = parseInt(prompt("How many numbers do you want to add?"));
+            if (isNaN(n) || n <= 0) {
+                alert("Please enter a valid positive number.");
+                return;
+            }
+            var sum = 0;
+            for (var i = 1; i <= n; i++) {
+                var num = parseFloat(confirm("Add the number " + i + "?\n(Click OK to add, Cancel to skip)") ? 
+                    prompt("Enter number " + i + ":") : 0);
+                if (!isNaN(num)) sum += num;
+            }
+            alert("Sum of the " + n + " numbers = " + sum);
+        }
+    </script>
+</body>
+</html>

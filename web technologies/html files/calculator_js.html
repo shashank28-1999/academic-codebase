@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator - JavaScript</title>
+    <style>
+        table { border-collapse: collapse; }
+        input[type="button"] { width: 50px; height: 40px; font-size: 16px; }
+        input[type="text"]   { width: 200px; height: 35px; font-size: 18px; text-align: right; }
+    </style>
+</head>
+<body>
+    <h2>Calculator (JavaScript)</h2>
+    <table border="1" cellpadding="4">
+        <tr>
+            <td colspan="4"><input type="text" id="display" value=""></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="appendVal('7')"></td>
+            <td><input type="button" value="8" onclick="appendVal('8')"></td>
+            <td><input type="button" value="9" onclick="appendVal('9')"></td>
+            <td><input type="button" value="/" onclick="appendVal('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="appendVal('4')"></td>
+            <td><input type="button" value="5" onclick="appendVal('5')"></td>
+            <td><input type="button" value="6" onclick="appendVal('6')"></td>
+            <td><input type="button" value="*" onclick="appendVal('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="appendVal('1')"></td>
+            <td><input type="button" value="2" onclick="appendVal('2')"></td>
+            <td><input type="button" value="3" onclick="appendVal('3')"></td>
+            <td><input type="button" value="-" onclick="appendVal('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="appendVal('0')"></td>
+            <td><input type="button" value="." onclick="appendVal('.')"></td>
+            <td><input type="button" value="=" onclick="calculate()"></td>
+            <td><input type="button" value="+" onclick="appendVal('+')"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="button" value="Clear" onclick="clearDisplay()" style="width:100%"></td>
+        </tr>
+    </table>
+
+    <script>
+        function appendVal(val) {
+            document.getElementById("display").value += val;
+        }
+        function calculate() {
+            try {
+                document.getElementById("display").value = eval(document.getElementById("display").value);
+            } catch (e) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+        function clearDisplay() {
+            document.getElementById("display").value = "";
+        }
+    </script>
+</body>
+</html>
