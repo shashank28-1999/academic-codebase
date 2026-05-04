@@ -1,0 +1,65 @@
+ga('require', 'ecommerce');
+ga('ecommerce:addTransaction', {
+  'id': '1234',                     // Transaction ID. Required.
+  'affiliation': 'Acme Clothing',   // Affiliation or store name.
+  'revenue': '11.99',               // Grand Total.
+  'shipping': '5',                  // Shipping.
+  'tax': '1.29'                     // Tax.
+});
+ga('ecommerce:addItem', {
+  'id': '1234',                     // Transaction ID. Required.
+  'name': 'Fluffy Pink Bunnies',    // Product name. Required.
+  'sku': 'DD23444',                 // SKU/code.
+  'category': 'Party Toys',         // Category or variation.
+  'price': '11.99',                 // Unit price.
+  'quantity': '1'                   // Quantity.
+});
+ga('ecommerce:send');
+ga('ecommerce:clear');
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+   'transactionId': '1234',
+   'transactionAffiliation': 'Acme Clothing',
+   'transactionTotal': 38.26,
+   'transactionTax': 1.29,
+   'transactionShipping': 5,
+   'transactionProducts': [{
+       'sku': 'DD44',
+       'name': 'Cotton T-Shirt',
+       'category': 'Apparel',
+       'price': 19.99,
+       'quantity': 1
+   },{
+       'sku': 'AA1243544',
+       'name': 'Cap',
+       'category': 'Apparel',
+       'price': 14.99,
+       'quantity': 2
+   },{
+       'sku': 'AA12435',
+       'name': 'Notebook',
+       'category': 'Apparel',
+       'price': 14.99,
+       'quantity': 1
+   },{
+       'sku': 'AA124366',
+       'name': 'Water Bottle',
+       'category': 'Apparel',
+       'price': 14.99,
+       'quantity': 3
+   },{
+       'sku': 'AA124345267',
+       'name': 'Backpack',
+       'category': 'Apparel',
+       'price': 99.99,
+       'quantity': 5
+   },{
+       'sku': 'AA1243599',
+       'name': 'Thermoflask',
+       'category': 'Apparel',
+       'price': 39.99,
+       'quantity': 2
+   }]
+});
+</script>

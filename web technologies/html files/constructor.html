@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script type="text/javascript">
+    function student(first,last,id,english,maths,science){
+        this.fname=first;
+        this.lname=last;
+        this.id=id;
+        this.markE=english;
+        this.markM=maths;
+        this.markS=science;
+        this.calculateAverage=function(){
+            return (this.markE+this.markM+this.markS)/3;
+        }
+        this.displayDetails=function(){
+            document.write("Student id:"+this.id+"<br/>");
+            document.write("Name:"+this.fname+" "+this.lname+"<br/>");
+            var avg=this.calculateAverage();
+            document.write("Average marks:"+avg+"<br/   ``````>");
+        }
+    }
+        var st1=new student("john","smith",15,85,79,80);
+        var st2=new student("hanna","turner",23,75,80,82)
+        st1.displayDetails();
+        st2.displayDetails();
+    </script>
+    </head>
+</html>
